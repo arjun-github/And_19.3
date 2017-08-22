@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:hint="Enter New Name"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_design"
+        android:padding="10dp"
+        android:enabled="false"
+
+        />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPhone"
+        android:hint="Enter New No."
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_design"
+        android:padding="10dp"
+        android:enabled="false"
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:textSize="20sp"
+        android:text="Delete"
+        android:background="#00695c"
+        android:textColor="#fff"
+        />
+
+
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Name.."
+        android:inputType="textVisiblePassword"/>
+
+    <!-- List View -->
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        />
+
+</LinearLayout>
